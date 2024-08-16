@@ -1,0 +1,228 @@
+<style>
+    .product-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card-no {
+        flex: 1 0 250px;
+        align-items: center;
+
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            flex-basis: calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .card {
+            flex-basis: 100%;
+        }
+    }
+
+    .new-product-card {
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .new-product-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .new-product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .new-product-info {
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+
+  .new-product-info h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .new-product-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .new-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .new-actions a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+
+  .new-actions a:hover {
+    color: #007bff;
+  }
+
+  .new-actions .add-to-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .wishlist-add{
+    margin-left: 13rem;
+    width:50px;
+      display:flex;
+      gap:10px;
+
+  }
+</style>
+
+<div class="product-card-container">
+    <div class="card-no">
+        <div class="new-product-card">
+            <img src="/user/images/Couch -1.jpg" width="200px" height="300px" alt="Product Image">
+            <div class="new-product-info">
+                <div class="wishlist-add">
+                    <a><img src="/user/images/wishlist-pink.png" alt="wish"></a>
+                    <a><img src="/user/images/trolley.png" alt="wish"></a>
+                  </div>
+              <h3>Product Name</h3>
+              <p class="price">$99.99</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo ante id libero bibendum, vel fermentum metus venenatis.</p>
+            </div>
+          </div>
+    </div>
+    <div class="card-no">
+        <div class="new-product-card">
+            <img src="/user/images/pic1.jpg" alt="Product Image">
+            <div class="new-product-info">
+                <div class="wishlist-add">
+                    <a><img src="/user/images/wishlist-pink.png" alt="wish"></a>
+                    <a><img src="/user/images/trolley.png" alt="wish"></a>
+                  </div>
+              <h3>Product Name</h3>
+              <p class="price">$99.99</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo ante id libero bibendum, vel fermentum metus venenatis.</p>
+            </div>
+          </div>
+    </div>
+    <div class="card-no">
+        <div class="new-product-card">
+            <img src="/user/images/pic2.jpg" alt="Product Image">
+            <div class="new-product-info">
+                <div class="wishlist-add">
+                    <a><img src="/user/images/wishlist-pink.png" alt="wish"></a>
+                    <a><img src="/user/images/trolley.png" alt="wish"></a>
+                  </div>
+              <h3>Product Name</h3>
+              <p class="price">$99.99</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo ante id libero bibendum, vel fermentum metus venenatis.</p>
+            </div>
+          </div>
+    </div>
+    <div class="card-no">
+        <div class="new-product-card">
+            <img src="/user/images/pic3.jpg" alt="Product Image">
+            <div class="new-product-info">
+                <div class="wishlist-add">
+                    <a><img src="/user/images/wishlist-pink.png" alt="wish"></a>
+                    <a><img src="/user/images/trolley.png" alt="wish"></a>
+                  </div>
+              <h3>Product Name</h3>
+              <p class="price">$99.99</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo ante id libero bibendum, vel fermentum metus venenatis.</p>
+            </div>
+          </div>
+    </div>
+    <div class="card-no">
+        <div class="new-product-card">
+            <img src="/user/images/pic4.jpg" alt="Product Image">
+            <div class="new-product-info">
+                <div class="wishlist-add">
+                    <a><img src="/user/images/wishlist-pink.png" alt="wish"></a>
+                    <a><img src="/user/images/trolley.png" alt="wish"></a>
+                  </div>
+              <h3>Product Name</h3>
+              <p class="price">$99.99</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo ante id libero bibendum, vel fermentum metus venenatis.</p>
+            </div>
+          </div>
+    </div>
+    <div class="card-no">
+        <div class="new-product-card">
+            <img src="/user/images/pic5.jpg" alt="Product Image">
+            <div class="new-product-info">
+                <div class="wishlist-add">
+                    <a><img src="/user/images/wishlist-pink.png" alt="wish"></a>
+                    <a><img src="/user/images/trolley.png" alt="wish"></a>
+                  </div>
+              <h3>Product Name</h3>
+              <p class="price">$99.99</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo ante id libero bibendum, vel fermentum metus venenatis.</p>
+            </div>
+          </div>
+    </div>
+    <div class="card-no">
+        <div class="new-product-card">
+            <img src="/user/images/pic6.jpg" alt="Product Image">
+            <div class="new-product-info">
+                <div class="wishlist-add">
+                    <a><img src="/user/images/wishlist-pink.png" alt="wish"></a>
+                    <a><img src="/user/images/trolley.png" alt="wish"></a>
+                  </div>
+              <h3>Product Name</h3>
+              <p class="price">$99.99</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo ante id libero bibendum, vel fermentum metus venenatis.</p>
+            </div>
+          </div>
+    </div>
+    <div class="card-no">
+        <div class="new-product-card">
+            <img src="/user/images/pic10.jpg" alt="Product Image">
+            <div class="new-product-info">
+                <div class="wishlist-add">
+                    <a href=""><img src="/user/images/wishlist-pink.png" width="30px" alt="wish"></a>
+                    <a href=""><img src="/user/images/trolley.png" alt="wish"></a>
+                  </div>
+              <h3>Product Name</h3>
+              <p class="price">$99.99</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo ante id libero bibendum, vel fermentum metus venenatis.</p>
+            </div>
+          </div>
+    </div>
+    <div class="card-no">
+        <div class="new-product-card">
+            <img src="/user/images/pic10.jpg" alt="Product Image">
+            <div class="new-product-info">
+                <div class="wishlist-add">
+                    <a href=""><img src="/user/images/wishlist-pink.png" width="30px" alt="wish"></a>
+                    <a href=""><img src="/user/images/trolley.png" alt="wish"></a>
+                  </div>
+              <h3>Product Name</h3>
+              <p class="price">$99.99</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo ante id libero bibendum, vel fermentum metus venenatis.</p>
+            </div>
+          </div>
+    </div>
+</div>

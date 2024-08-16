@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Furni</title>
+  <link rel="stylesheet" href="user/css/signin-style.css">
+    <link rel="shortcut icon" href="/images/furniture-logo.png">
+
+</head>
+<body>
+<img src="user/images/Furnicia-logo.png" class="signin-logo">
+  <div class="container">
+    <div class="login form">
+        <header>Login</header>
+            <form method="post" action="{{ url_for('user.signin_user') }}">
+                <input type="texr" name="username" placeholder="Enter your Name">
+                <input type="email" name="email" placeholder="Enter your Email">
+                <input type="password" name="password" placeholder="Enter your password">
+                <button type="submit">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front text"> Signin
+                    </span>
+                </button>
+            </form>
+        <p>Don't have an account? <a href= "{{ url_for('user.signup')}}">Signup</a></p>
+    </div>
+  </div>
+</body>
+</html>

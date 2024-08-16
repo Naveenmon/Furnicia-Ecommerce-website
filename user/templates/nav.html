@@ -1,0 +1,83 @@
+<style>
+  .navbar-main{
+    background-color:#3b5d50;
+    display:flex;
+
+  }
+  .left-section{
+    display:flex;
+    color:#fff;
+    font-size:20px;
+    font-family:sans-serif;
+    width:400px;
+    background-color:#3b5d50;
+    align-items:center;
+    margin-left:50px;
+  }
+  .brand-title{
+    margin-top:20px;
+  }
+  .middle-section{
+    width:400px;
+    background-color:#3b5d50;
+    flex:1;
+  }
+  .right-section{
+    display:flex;
+    width:300px;
+    background-color:#3b5d50;
+    align-items: center;
+    flex:1;
+    justify-content: flex-end;
+  }
+  .wishlist-icon{
+    margin-right:15px;
+  }
+  .cart-icon{
+    margin-right:15px;
+  }
+  .person-icon{
+
+    width:40px;
+  }
+  .session-name{
+    padding-right:20px;
+    color:#fff;
+    font-size:15px;
+  }
+</style>
+
+
+<div class="navbar-main">
+  <div class="left-section">
+    <div class="brand-logo">
+      <img src="/user/images/furniture-logo.png" width="75px">
+    </div>
+    <div class="brand-title">
+      <p>HavenlyHome.</p>
+    </div>
+  </div>
+  <div class="middle-section">
+    <div class="search-area">
+
+    </div>
+  </div>
+  <div class="right-section">
+    <div class="wishlist-icon">
+      <img src="/user/images/wishlist.png">
+    </div>
+    <div class="cart-icon">
+      <a href="/cart"><img src="/user/images/cart.svg" width="24px"></a>
+    </div>
+    <div class="person-icon">
+      <img src="/user/images/person.png">
+    </div>
+    <div class="session-name">
+      {% if not session.get("name") %}
+      <a href="{{ url_for('user.signin') }}" style="color: white;">Sign in</a>
+      {%  else %}
+      <a href="#" style="color:white;">{{session.name}}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="{{ url_for('user.static',filename='css/signin-style.css')}}" type="text/css">
+    <title>Furni</title>
+</head>
+<body>
+<img src="user/images/Furnicia-logo.png" class="signup-logo">
+<div class="container1">
+    <div class="registration form">
+        <header>Signup</header>
+        <form method="post" action="{{ url_for('user.signup_user') }}">
+            <input type="text" name="username" placeholder="Enter your Name">
+            <input type="email" name="email" placeholder="Enter your email">
+            <input type="password" name="password" placeholder="Enter  password">
+            <input type="password" name="cpassword" placeholder="Confirm  password">
+            <button type="submit">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text"> Sign up
+                </span>
+            </button>
+        </form>
+        <p>Already have an account? <a href="{{ url_for('user.signin')}}">Login</a></p>
+    </div>
+</div>
+</body>
+</html>

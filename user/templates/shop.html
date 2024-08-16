@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+		<!-- Bootstrap CSS -->
+		{% include 'link.html' %}
+		<title>Furni</title>
+	</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		{% include 'nav.html' %}
+		<!-- End Header/Navigation -->
+
+		<!--products area-->
+		<div class="space-for-product">
+			<div class="main-container">
+				{% for i in l %}
+                    <div class="shop-product">
+                        <a href="{{ url_for('user.shop_detail',id=i._id)}}"><img src="/user/images/{{ i.p_img}}" alt="Product 1"></a>
+                        <div class="shop-product-info">
+                            <h2>{{i.p_name}}</h2>
+                            <p class="shop-price">{{ i.p_price}}</p>
+                            <p class="shop-description">{{i.p_desc}}</p>
+                            <img src="/user/images/wishlist-pink.png" style="background-color: white" alt="image">
+                            <button class="btn btn-primary" type="submit"  style="color:white; margin-left: 50px;" >Cart</button>
+                        </div>
+                    </div>
+					{% endfor %}
+			</div>
+		</div>
+
+		<!--End-products area-->
+
+
+		<!-- Start Footer Section -->
+		{% include 'footer.html' %}
+		<!-- End Footer Section -->
+	</body>
+
+</html>
